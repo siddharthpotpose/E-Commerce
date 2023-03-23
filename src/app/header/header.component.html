@@ -12,8 +12,11 @@
     </form>
     <div class="menu d-flex justify-content-end">
       <div class="collapse navbar-collapse d-flex " id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="seller">Seller</a>
+        <!-- <a class="navbar-brand" [routerLink]="['seller']">Seller</a> -->
         <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="['seller']">Seller</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
