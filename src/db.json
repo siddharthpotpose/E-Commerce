@@ -1,0 +1,34 @@
+{
+  "seller": [
+    {
+      "id": 1,
+      "name": "sid",
+      "password": "sid@123",
+      "email": "sid@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "arpan",
+      "password": "arpan@123",
+      "email": "arpan@gmail.com"
+    },
+    {
+      "name": "sidi",
+      "password": "sidi@123",
+      "email": "sidi@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "ridhi",
+      "password": "ridhi@123",
+      "email": "ridhi@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "piddi",
+      "password": "piddi@123",
+      "email": "piddi@gmail.com",
+      "id": 5
+    }
+  ]
+}
