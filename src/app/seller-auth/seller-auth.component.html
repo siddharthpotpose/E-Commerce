@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+
+      <div class="card " *ngIf="!showLogin" >
+        <h5 class="card-header">SignUp Form</h5>
+        <div class="card-body">
+          <form [formGroup]="SignUpForm">
+            <div class="form-group">
+              <label for="" class="form-label">First Name</label>
+              <input type="text" class="form-control" formControlName="name" name="name">
+            </div>
+            <div class="form-group mt-3">
+              <label for="" class="form-label"> Email Id</label>
+              <input type="email" class="form-control" formControlName="email"  name="email">
+            </div>
+            <div class="form-group mt-3">
+              <label for="" class="form-label">Password</label>
+              <input type="password" class="form-control" formControlName="password" name="password">
+            </div>
+            <button type="submit" class="form-control btn btn-danger mt-3">Login</button>
+
+            <div class="d-flex justify-content-between mt-1" >
+
+              <a class="a" (click)="openLogin()">Already Have Account ?</a>
+              <a [routerLink]="['#']">Click To Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+<!-- ---------------------------------------------------------- -->
+      <div class="card" *ngIf="showLogin"  >
+
+        <h5 class="card-header">Login Form</h5>
+        <div class="card-body">
+          <form [formGroup]="LoginForm">
+
+            <div class="form-group mt-3">
+              <label for="" class="form-label">Email Id</label>
+              <input type="email" class="form-control" formControlName="email" name="email">
+            </div>
+            <div class="form-group mt-3">
+              <label for="" class="form-label">Password</label>
+              <input type="password" class="form-control" formControlName="password" name="password">
+            </div>
+            <button type="submit" class="form-control btn btn-danger mt-3" (click)="openSignUp()">SignUp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

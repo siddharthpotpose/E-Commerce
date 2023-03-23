@@ -1,0 +1,46 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <h1>E-commerce</h1>
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <form class="d-flex m-4 ">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <div class="menu d-flex justify-content-end">
+      <div class="collapse navbar-collapse d-flex " id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="seller">Seller</a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart(0)</a>
+          </li>
+
+        </ul>
+        <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['login']">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['cart']">Cart(0)</a>
+          </li>
+
+        </ul> -->
+
+      </div>
+    </div>
+
+  </div>
+</nav>
+<router-outlet></router-outlet>
