@@ -3,7 +3,7 @@
     <div class="col-md-6">
 
       <div class="card " *ngIf="!showLogin" >
-        <h5 class="card-header">SignUp Form</h5>
+        <h5 class="card-header bg-danger">SignUp Form</h5>
         <div class="card-body">
           <form [formGroup]="SignUpForm">
             <div class="form-group">
@@ -22,8 +22,8 @@
 
             <div class="d-flex justify-content-between mt-1" >
 
-              <a class="a" (click)="openLogin()">Already Have Account ?</a>
-              <a [routerLink]="['#']">Click To Login</a>
+              <a class="a" (click)="Login()">Already Have Account ? <br> <span>Click To Login</span></a>
+              <!-- <a [routerLink]="['#']">Click To Login</a> -->
             </div>
           </form>
         </div>
@@ -31,7 +31,7 @@
 <!-- ---------------------------------------------------------- -->
       <div class="card" *ngIf="showLogin"  >
 
-        <h5 class="card-header">Login Form</h5>
+        <h5 class="card-header bg-danger">Login Form</h5>
         <div class="card-body">
           <form [formGroup]="LoginForm">
 
@@ -43,7 +43,7 @@
               <label for="" class="form-label">Password</label>
               <input type="password" class="form-control" formControlName="password" name="password">
             </div>
-            <button type="submit" class="form-control btn btn-danger mt-3" (click)="openSignUp()">SignUp</button>
+            <button type="submit" class="form-control btn btn-danger mt-3" (click)="SignUp()">SignUp</button>
           </form>
         </div>
       </div>

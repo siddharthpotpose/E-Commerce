@@ -22,13 +22,10 @@ export class SellerAuthComponent {
     email: new FormControl(''),
   });
 
-
-
-
-  openLogin(){
+  Login(){
     this.showLogin=true;
   }
-  openSignUp(){
+  SignUp(){
     this.showLogin=false;
   }
 
