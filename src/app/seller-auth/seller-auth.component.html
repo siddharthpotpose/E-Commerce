@@ -18,7 +18,7 @@
               <label for="" class="form-label">Password</label>
               <input type="password" class="form-control" formControlName="password" name="password">
             </div>
-            <button type="submit" class="form-control btn btn-danger mt-3">Login</button>
+            <button type="submit" class="form-control btn btn-danger mt-3" (click)="signUpUser(SignUpForm.value)">signUp</button>
 
             <div class="d-flex justify-content-between mt-1" >
 
@@ -43,7 +43,7 @@
               <label for="" class="form-label">Password</label>
               <input type="password" class="form-control" formControlName="password" name="password">
             </div>
-            <button type="submit" class="form-control btn btn-danger mt-3" (click)="SignUp()">SignUp</button>
+            <button type="submit" class="form-control btn btn-danger mt-3" (click)="loginUser()">Login</button>
           </form>
         </div>
       </div>

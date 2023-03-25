@@ -29,6 +29,28 @@
       "password": "piddi@123",
       "email": "piddi@gmail.com",
       "id": 5
+    },
+    {
+      "name": "khan bhai",
+      "password": "bhai@123",
+      "email": "bhai@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "khan bhai",
+      "password": "",
+      "email": "",
+      "id": 7
+    }
+  ],
+  "login":
+    [
+      {
+
+      "email": "sid@gmail.com",
+      "password": "sid@123"
+
     }
   ]
+
 }
