@@ -3,26 +3,33 @@ import{HttpClient} from '@angular/common/http'
 import { Router } from '@angular/router';
 import { signup } from '../data-type';
 import { NgIf } from '@angular/common';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServicesService {
 
-
-
   constructor(private http:HttpClient, private router:Router) { }
   userSignUp(data:signup){
-this.http.post("http://localhost:3000/seller",data).subscribe(res=>
+this.http.post("http://localhost:3000/seller",data,{observe:'response'}).subscribe((res)=>
 {
   this.router.navigate(["seller-home"])
+  localStorage.setItem('seller',JSON.stringify(res.body))
+
 }
 ) }
 userLogin(data:signup){
 
-  this.http.get("http://localhost:3000/login?email=${data.email}&&password=${data.password}").subscribe(res=>
+  this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,{observe:'response'}).subscribe((res:any)=>
   {
+    if(res && res.body && res.body.length){
+    localStorage.setItem('seller',JSON.stringify(res.body))
     this.router.navigate(["seller-home"])
+    }
+    else {
+      alert(' try again ! email or password not match.')
+    }
   })
 }
 }

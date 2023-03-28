@@ -14,12 +14,12 @@ export class SellerAuthComponent {
 
   constructor(private obj:ServicesService){}
 
-signUpUser(data:signup){
-  this.obj.userSignUp(this.SignUpForm.value)
-}
-loginUser(){
-  this.obj.userLogin(this.LoginForm.value)
-}
+  Login(){
+    this.showLogin=true;
+  }
+  SignUp(){
+    this.showLogin=false;
+  }
 
   SignUpForm:FormGroup = new FormGroup({
     name: new FormControl(''),
@@ -32,11 +32,15 @@ loginUser(){
     email: new FormControl(''),
   });
 
-  Login(){
-    this.showLogin=true;
+  signUpUser(data:signup){
+    this.obj.userSignUp(this.SignUpForm.value)
   }
-  SignUp(){
-    this.showLogin=false;
+  loginUser(){
+    this.obj.userLogin(this.LoginForm.value)
+
   }
+
+
+
 
 }

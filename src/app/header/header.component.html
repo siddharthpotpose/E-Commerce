@@ -10,10 +10,10 @@
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
-    <div class="menu d-flex justify-content-end">
-      <div class="collapse navbar-collapse d-flex " id="navbarTogglerDemo01">
+    <div class="menu d-flex justify-content-end" >
+      <div class="collapse navbar-collapse d-flex " id="navbarTogglerDemo01" [ngSwitch]="data">
         <!-- <a class="navbar-brand" [routerLink]="['seller']">Seller</a> -->
-        <ul class="nav justify-content-end">
+        <ul class="nav justify-content-end" *ngSwitchCase="'default'">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" [routerLink]="['seller']">Seller</a>
           </li>
@@ -28,22 +28,31 @@
           </li>
 
         </ul>
-        <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngSwitchCase="'seller'">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Sid</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['login']">Login</a>
+            <a class="nav-link" [routerLink]="['#']">Product List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['#']">Product Add</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['cart']">Cart(0)</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['#']" (click)="logout()">Logout</a>
+          </li>
 
-        </ul> -->
+        </ul>
 
       </div>
     </div>
 
   </div>
 </nav>
-<router-outlet></router-outlet>
+
+
+
+<!-- <router-outlet></router-outlet> -->

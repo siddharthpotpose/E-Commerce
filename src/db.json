@@ -41,16 +41,42 @@
       "password": "",
       "email": "",
       "id": 7
-    }
-  ],
-  "login":
-    [
-      {
-
-      "email": "sid@gmail.com",
-      "password": "sid@123"
-
+    },
+    {
+      "name": "sid",
+      "password": "123",
+      "email": "siddharthpotpose9+9@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "ash",
+      "password": "123",
+      "email": "ash@gmail.com",
+      "id": 9
+    },
+    {
+      "name": "sid1",
+      "password": "sid1",
+      "email": "sid1@gmail.com",
+      "id": 10
+    },
+    {
+      "name": "sidhu",
+      "password": "sidhu123",
+      "email": "sidhu@gmail.com",
+      "id": 11
+    },
+    {
+      "name": "siddd",
+      "password": "123",
+      "email": "siddd@gmail.com",
+      "id": 12
+    },
+    {
+      "name": "sid2",
+      "password": "sid2",
+      "email": "sid2@gmail.com",
+      "id": 13
     }
   ]
-
 }
