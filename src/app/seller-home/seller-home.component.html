@@ -1,1 +1,31 @@
-<p>seller-home works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead>
+          <tr >
+            <th scope="col">Company Products</th>
+            <th scope="col">Price</th>
+            <th scope="col">Specification</th>
+            <th scope="col">Color</th>
+            <th scope="col">Image</th>
+            <th scope="col">Id</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr scope="row" *ngFor="let s of products">
+            <td >{{s.CompanyProduct}}</td>
+            <td>{{s.Price}}</td>
+            <td>{{s.Specification}}</td>
+            <td>{{s.color}}</td>
+            <td><img src="{{s.image}}" style="height: 100px; width: 100px;" alt=""></td>
+            <td>{{s.id}}</td>
+            <td><button type="button" class="btn btn-info" (click)="deleteProdcuts(s.id)">Delete</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

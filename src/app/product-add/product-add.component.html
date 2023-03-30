@@ -1,0 +1,52 @@
+<!-- <form action="" [formGroup]="productsForm">
+
+  <input type="text" formControlName="Price" name="Price" id="Price">
+  <input type="text" formControlName="Specification" name="Specification" id="Specification">
+  <input type="text" formControlName="color" name="color" id="">
+  <input type="text" formControlName="image" name="image" id="">
+  <input type="text" formControlName="id" name="id" id="">
+<button type="submit" (click)="productsDataAdd()">Submit</button>
+</form> -->
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card mt-5">
+        <h5 class="card-header bg-danger"><h2 class="text-light mt-2">Add Products</h2></h5>
+        <div class="card-body">
+         <form [formGroup]="productsForm">
+          <div class="form-group">
+            <label for="" class="form-label">Product Name</label>
+            <input type="text" class="form-control" formControlName="CompanyProduct" name="CompanyProduct" id="CompanyProduct">
+
+          </div>
+          <div class="form-group">
+            <label for="" class="form-label">Price</label>
+            <input type="text" class="form-control" formControlName="Price" name="Price" id="Price">
+
+          </div>
+          <div class="form-group">
+            <label for="" class="form-label">Specification</label>
+            <input type="text" class="form-control" formControlName="Specification" name="Specification" id="Specification">
+
+          </div>
+          <div class="form-group">
+            <label for="" class="form-label">Color</label>
+            <input type="text" class="form-control" formControlName="color" name="color" id="color">
+
+          </div>
+          <div class="form-group">
+            <label for="" class="form-label">Image</label>
+            <input type="text" class="form-control" formControlName="image" name="image" id="image">
+
+          </div>
+
+         <a [routerLink]="['seller-home']"> <button type="submit" class="btn btn-warning mt-2 "(click)="productsDataAdd()">Submit</button>
+         </a>
+        </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

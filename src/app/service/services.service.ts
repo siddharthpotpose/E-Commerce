@@ -31,5 +31,15 @@ userLogin(data:signup){
       alert(' try again ! email or password not match.')
     }
   })
+
+}
+getData(){
+  return this.http.get(`http://localhost:3000/products`)
+}
+postProducts(body:any){
+  return this.http.post(`http://localhost:3000/products`,body)
+}
+deleteProduct(id:number){
+  return this.http.delete(`http://localhost:3000/products/${id}`)
 }
 }
