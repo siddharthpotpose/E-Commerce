@@ -22,5 +22,6 @@ productsForm:FormGroup=new FormGroup({
 productsDataAdd(){
   this.obj.postProducts(this.productsForm.value).subscribe(res=>console.log(res))
   alert('"Successfully Added Product"')
+
 }
 }

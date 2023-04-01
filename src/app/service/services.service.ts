@@ -11,11 +11,13 @@ import { BehaviorSubject } from 'rxjs';
 export class ServicesService {
 
   constructor(private http:HttpClient, private router:Router) { }
+
   userSignUp(data:signup){
 this.http.post("http://localhost:3000/seller",data,{observe:'response'}).subscribe((res)=>
 {
-  this.router.navigate(["seller-home"])
+
   localStorage.setItem('seller',JSON.stringify(res.body))
+  this.router.navigate(["seller-home"])
 
 }
 ) }

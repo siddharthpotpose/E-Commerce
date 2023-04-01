@@ -83,6 +83,12 @@
       "password": "sid7@123",
       "email": "sid7@gmail.com",
       "id": 14
+    },
+    {
+      "id": 20,
+      "name": "practice",
+      "password": "practice@123",
+      "email": "practice@gmail.com"
     }
   ],
   "products": [
@@ -131,16 +137,16 @@
       "Price": "",
       "Specification": "",
       "color": "",
-      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCADOARYDASIAAhEBAxEB/8QAHAAAAQQDAQAAAAAAAAAAAAAAAAECAwYEBQcI/8QAURAAAgEDAgIFBggKCQIDCQAAAQIDAAQRBRIhMQYTQVGBFCJhcZGhBxUjMlWU0dI1QlJicoKisbPhFiQzdHWSlbLBJUNERfFTVGNzk6PC0/D/xAAaAQEBAAMBAQAAAAAAAAAAAAAAAQMEBQIG/8QAMBEAAgEDAwIEBAUFAAAAAAAAAAECAwQREiExBUETIlFxFDJhgQYzkcHwFbHR4fH/2gAMAwEAAhEDEQA/AOt0UUUAUUUUAUfZRR9lAFFFFAFFFFAFFFFAFFFGccz2E0AUVinUdLBIN9ZgjmDcQ/eo+MtK/wDf7L6zD96gMqisT4y0n6QsvrMP3qX4y0n6QsvrMP3qAyqKxPjLSfpCy+sw/eo+M9J+kLL6zD96gMuisT4z0j6QsfrMH3qPjTR/pGx+tQfeoDLorE+NNI+kbH6zB96j400f6RsfrUH3qAy6Kw/jXR/pGw+tQfeo+NdG+krD61B96gMyisP410b6SsPrUH3qT410b6SsPrUH3qAzf5UVh/GujfSVh9ag+9R8a6N9JWH1qD71AZlFYfxro30lYfWoPvUq6npLEKuoWTMSAAtzAST6AGoDLoozRQBRRRQBRRRQBRRRQBR9lFH2UAUUUUAUUUUAUUUUAVUelc9zLNbaerYtuoFzMgJAmdnZUD96rtJxyyR+TVuqodI/wpD/AHG3/iz0BWfJFXPAD1ACjyes96haqQxOpNN6rnWUa",
-      "id": "61akKqh"
-    },
-    {
-      "CompanyProduct": "",
-      "Price": "",
-      "Specification": "",
-      "color": "",
       "image": "https://th.bing.com/th/id/OIP.pjpnmhSNPGGcbgNVELnyjQHaGS?w=208&h=180&c=7&r=0&o=5&pid=1.7",
       "id": "2F88XNX"
+    },
+    {
+      "CompanyProduct": "lenovo",
+      "Price": "37500",
+      "Specification": "8gb ssd 250gb",
+      "color": "black",
+      "image": "https://th.bing.com/th/id/OIP._6Fcl0y7Prv5HJOWTHwt9gHaHa?w=199&h=199&c=7&r=0&o=5&pid=1.7",
+      "id": "ojdvOju"
     }
   ]
 }
