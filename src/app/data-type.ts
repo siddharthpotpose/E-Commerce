@@ -9,3 +9,11 @@ export default interface login{
   password:string;
   email:string;
 }
+export interface getdata{
+  CompanyProduct:string;
+  Price:string;
+  Specification:string;
+  color:string;
+  image:string;
+  id:string;
+}

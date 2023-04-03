@@ -147,6 +147,46 @@
       "color": "black",
       "image": "https://th.bing.com/th/id/OIP._6Fcl0y7Prv5HJOWTHwt9gHaHa?w=199&h=199&c=7&r=0&o=5&pid=1.7",
       "id": "ojdvOju"
+    },
+    {
+      "CompanyProduct": "ram",
+      "Price": "1450",
+      "Specification": "ssd 250gb",
+      "color": "black",
+      "image": "data:image/jpeg;base64,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",
+      "id": "2EJZoo9"
+    },
+    {
+      "CompanyProduct": "mi phone",
+      "Price": "2999",
+      "Specification": "8gb ram | battery : 5000mh | storage 256gb",
+      "color": "red",
+      "image": "https://th.bing.com/th/id/OIP.IAtWmA4m9JZtdFe-ELXKDgHaG-?w=200&h=188&c=7&r=0&o=5&pid=1.7",
+      "id": "IhFViIT"
+    },
+    {
+      "CompanyProduct": "mi phone",
+      "Price": "34999",
+      "Specification": "8gb ram | battery : 5000mh | storage 256gb",
+      "color": "black",
+      "image": "https://th.bing.com/th/id/OIP.MuwCS3fwgBawc6PGyutelQHaHa?w=187&h=187&c=7&r=0&o=5&pid=1.7",
+      "id": "PxPJMpQ"
+    },
+    {
+      "CompanyProduct": "headphone",
+      "Price": "1700",
+      "Specification": "Mi XIAOMI Superbass On-Ear Wireless Headphone with 40mm driver for Heavy Bass Bluetooth Headset",
+      "color": "black",
+      "image": "https://rukminim1.flixcart.com/image/416/416/kbs9k7k0/headphone/c/n/5/ydtdqc01jy-mi-original-imaftfwercszkuby.jpeg?q=70",
+      "id": "zXob9P-"
+    },
+    {
+      "CompanyProduct": "mi power bank",
+      "Price": "1600",
+      "Specification": "Weight: 200 g | Capacity: 10000 mAh Lithium Polymer Battery | Type-C Connector Power Source: AC Adapter Charging Cable Included",
+      "color": "black",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kthjy4w0/power-bank/n/1/l/pocket-pro-pb1022zm-mi-original-imag6tcrh2vcmgxj.jpeg?q=70",
+      "id": "v6cja4f"
     }
   ]
 }
