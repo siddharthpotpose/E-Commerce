@@ -8,9 +8,14 @@ import { ServicesService } from '../service/services.service';
 })
 export class HomeComponent implements OnInit {
   proData:any;
+  topPro:any;
   constructor(private productData:ServicesService){}
   ngOnInit(): void {
-   this.productData.getData().subscribe(res=>{this.proData=res, console.log(res)})
+   this.productData.productget().subscribe(res=>{this.proData=res
+     console.log(res)})
+ this.productData.topProducts().subscribe(data=>{
+  this.topPro=data
+ })
 
   }
 

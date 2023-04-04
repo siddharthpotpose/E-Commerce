@@ -101,22 +101,6 @@
       "id": "1"
     },
     {
-      "ProductCompany": "dell",
-      "Price": "41000",
-      "Specification": "8gb ssd 250gb",
-      "color": "white",
-      "image": "https://www.bing.com/images/search?view=detailV2&ccid=pjpnmhSN&id=2678CC04C6118D33F659A5CEB6ED99F33EA9AC01&thid=OIP.pjpnmhSNPGGcbgNVELnyjQHaGS&mediaurl=https%3a%2f%2fi5.walmartimages.com%2fasr%2f0f9c5a43-21e2-4859-a065-aa723a7fa617_1.6695fc7cfb43cf7e3fba42d38ca0d58f.jpeg&exph=1275&expw=1500&q=img+laptop+hp&simid=608023264839231707&FORM=IRPRST&ck=081F52239F83500C56483FE0D78C897C&selectedIndex=0",
-      "id": "eFJIySJ"
-    },
-    {
-      "ProductCompany": "",
-      "Price": "",
-      "Specification": "",
-      "color": "",
-      "image": "https://th.bing.com/th/id/OIP.pjpnmhSNPGGcbgNVELnyjQHaGS?w=208&h=180&c=7&r=0&o=5&pid=1.7",
-      "id": "WE81lD2"
-    },
-    {
       "CompanyProduct": "asus",
       "Price": "57000",
       "Specification": "8gb ssd 556gb",

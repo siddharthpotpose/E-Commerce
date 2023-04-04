@@ -44,4 +44,12 @@ postProducts(body:any){
 deleteProduct(id:number){
   return this.http.delete(`http://localhost:3000/products/${id}`)
 }
+
+productget(){
+  return this.http.get(`http://localhost:3000/products?_limit=3`)
+}
+topProducts(){
+return this.http.get(`http://localhost:3000/products?_limit=9`)
+}
+
 }
