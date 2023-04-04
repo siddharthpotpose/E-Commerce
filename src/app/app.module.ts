@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductAddComponent } from './product-add/product-add.component';
     SellerAuthComponent,
     HeaderComponent,
     SellerHomeComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

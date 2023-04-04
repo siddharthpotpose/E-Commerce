@@ -93,7 +93,7 @@
   ],
   "products": [
     {
-      "CompanyProduct": "HP",
+      "CompanyProduct": "HP laptop",
       "Price": "37000",
       "Specification": "8gb ssd 250gb",
       "color": "black",
@@ -101,7 +101,7 @@
       "id": "1"
     },
     {
-      "CompanyProduct": "asus",
+      "CompanyProduct": "asus laptop",
       "Price": "57000",
       "Specification": "8gb ssd 556gb",
       "color": "blue",
@@ -109,7 +109,7 @@
       "id": "7"
     },
     {
-      "CompanyProduct": "hp",
+      "CompanyProduct": "hp laptop",
       "Price": "41000",
       "Specification": "8gb ssd 556gb",
       "color": "black",
@@ -125,7 +125,7 @@
       "id": "2F88XNX"
     },
     {
-      "CompanyProduct": "lenovo",
+      "CompanyProduct": "lenovo laptop",
       "Price": "37500",
       "Specification": "8gb ssd 250gb",
       "color": "black",

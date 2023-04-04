@@ -26,4 +26,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate([''])
     alert('logout successfully')
   }
+  submitSearch(val:string){
+console.log(val)
+this.router.navigate([`search/${val}`])
+  }
 }
