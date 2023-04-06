@@ -1,38 +1,43 @@
 <div class="container-fluid">
   <!-- <div class="container"> -->
-    <div class="row justify-content-center">
-      <div class="col-md-11">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://d3nn873nee648n.cloudfront.net/900x600/14855/20-SM562650.jpg"
-                style="height: 80vh; width: 100vw;" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://d3nn873nee648n.cloudfront.net/900x600/14762/8-SM556400.jpg" class="d-block w-100"
-                style="height: 80vh; width: 100vw;" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://d3nn873nee648n.cloudfront.net/900x600/16629/220-SM715697.jpg"
-                style="height: 80vh; width: 100vw;" class="d-block w-100" alt="...">
-            </div>
+  <div class="row justify-content-center">
+    <div class="col-md-11">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <img src="https://d3nn873nee648n.cloudfront.net/900x600/14855/20-SM562650.jpg"
+              style="height: 80vh; width: 100vw;" class="d-block w-100" alt="...">
+
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+
+          <div class="carousel-item">
+            <img src="https://d3nn873nee648n.cloudfront.net/900x600/14762/8-SM556400.jpg" class="d-block w-100"
+              style="height: 80vh; width: 100vw;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d3nn873nee648n.cloudfront.net/900x600/16629/220-SM715697.jpg"
+              style="height: 80vh; width: 100vw;" class="d-block w-100" alt="...">
+          </div>
         </div>
 
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
     </div>
-    <!-- <div class="row justify-content-center">
+
+  </div>
+  <!-- <div class="row justify-content-center">
       <div class="col-md-3">
         <div class="card">
           <div class="card-body" *ngFor="let s of proData">
@@ -50,15 +55,24 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 mt-4" *ngFor="let s of topPro">
-        <div class="card" style="width: 18rem;">
-          <img src="{{s.image}}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">{{s.CompanyProduct}}</h5>
-            <p class="card-text"> {{s.Specification}}</p>
-            <a href="#" class="btn btn-primary">{{s.Price}}</a>
+        <a routerLink="/product/{{s.id}}" class="text-dark" style="text-decoration: none;">
+          <div class="card" style="width: 18rem;">
+            <img src="{{s.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-3">{{s.CompanyProduct}}</h5>
+              <p class="card-text">Specification : {{s.Specification}}</p>
+              <a href="#" class="btn btn-primary">price : {{s.Price}}</a>
+            </div>
+
+            <div class="add mb-3 d-flex justify-content-center ">
+              <a routerLink="/product/{{s.id}}" class="btn btn-outline-info">View Details </a>
+              <a routerLink="/product/{{s.id}}" class="btn btn-outline-info ms-2">Add to Cart </a>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
+
+
     </div>
   </div>
 </div>

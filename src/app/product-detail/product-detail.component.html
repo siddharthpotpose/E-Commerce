@@ -31,9 +31,9 @@
               <button class="btn btn-outline-danger ms-2" type="button">Buy Now</button>
             </div>
             <div class="box d-flex mb-3">
-              <button type="button" class="btn btn-light">-</button>
-              <input type="number" style="width: 50px;" class="form-control" name="" id="">
-              <button type="button" class="btn btn-light">+</button>
+              <button type="button" (click)="addProductMin('min')" class="btn btn-light">-</button>
+              <input type="number" style="width: 50px;" class="form-control" value="{{productQuantity}}" name="" id="">
+              <button type="button" (click)="addProductMin('add')" class="btn btn-light">+</button>
             </div>
 
 
