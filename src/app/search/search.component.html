@@ -30,14 +30,20 @@
 <div class="container-fluid">
   <div class="container">
     <div class="row  d-flex justify-content-center">
-      <div class="card mb-3" style="max-width: 540px;" *ngFor="let s of resultSearch">
+      <div class="col-md-8 mt-3 ">
+
+
+      <div class="card mb-3 d-flex justify-content-center"
+      style="max-width: 540px;" *ngFor="let s of resultSearch">
         <div class="row g-0">
           <div class="col-md-4">
+            <a routerLink="/product/{{s.id}}">
             <img src="{{s.image}}" class="img-fluid rounded-start" alt="...">
+          </a>
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">{{s.CompanyProduct}}</h5>
+            <div class="card-body "  routerLink="/product/{{s.id}}">
+              <h2 class="card-title">{{s.CompanyProduct}}</h2>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
              <button type="button" class="btn btn-info">{{s.Price}}</button>
@@ -45,6 +51,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </div>

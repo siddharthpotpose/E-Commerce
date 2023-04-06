@@ -1,0 +1,45 @@
+<!-- <div class="container-fluid">
+  <div class="container">
+    <div class="row" *ngIf="showData">
+      <div class="col-md-6">
+        <img src="{{showData.image}}" alt="">
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row d-flex justify-content-center mt-3" *ngIf="showData">
+    <div class="col-md-6">
+      <div class="card mb-3 d-flex justify-content-center" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <a routerLink="/product/{{showData.id}}">
+              <img src="{{showData.image}}" class="img-fluid rounded-start mt-4" alt="...">
+            </a>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body " routerLink="/product/{{showData.id}}">
+              <h2 class="card-title fs-2">{{showData.CompanyProduct}}</h2>
+              <p class="card-text"> Specification : {{showData.Specification}} </p>
+              <p class="card-text fs-5"><small class="text-muted">color : {{showData.color}}</small></p>
+              <p class="card-text btn btn-info">price : {{showData.Price}}</p>
+
+            </div>
+            <div class="button mb-3">
+              <button class="btn btn-outline-danger " type="button">Add to Cart</button>
+              <button class="btn btn-outline-danger ms-2" type="button">Buy Now</button>
+            </div>
+            <div class="box d-flex mb-3">
+              <button type="button" class="btn btn-light">-</button>
+              <input type="number" style="width: 50px;" class="form-control" name="" id="">
+              <button type="button" class="btn btn-light">+</button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

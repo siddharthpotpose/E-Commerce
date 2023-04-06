@@ -5,6 +5,7 @@ import { ProductAddComponent } from './product-add/product-add.component';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SearchComponent } from './search/search.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const routes: Routes = [
   {
@@ -24,8 +25,12 @@ const routes: Routes = [
     component:ProductAddComponent
   },
   {
-    path:'search/:query',
+    path:'search/:data',
     component:SearchComponent
+  },
+  {
+    path:'product/:ProductId',
+    component:ProductDetailComponent
   },
 
 
